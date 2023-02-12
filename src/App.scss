@@ -1,15 +1,14 @@
 body {
-  background-color: #333;
-  a {
-    text-decoration: none;
-  }
+  background-color: #222;
   .App {
     nav {
       display: flex;
       gap: 1rem;
       font-size: 1.3rem;
+      margin: 1.5rem 3rem;
       a {
-        color: rosybrown;
+        color: rgb(148, 166, 166);
+        text-decoration: none;
       }
     }
   }
@@ -22,9 +21,9 @@ body {
     .routes {
       h2 {
         font-style: italic;
+        margin: 1rem 1rem;
         a {
           color: rosybrown;
-          text-decoration: underline;
         }
       }
     }
