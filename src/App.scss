@@ -17,11 +17,57 @@ body {
       color: blanchedalmond;
     }
   }
+  .pageLogin {
+    p {
+      color: blanchedalmond;
+      font-size: large;
+    }
+    button {
+      background-color: blanchedalmond;
+      color: black;
+    }
+    input,
+    button {
+      padding: 0.3rem;
+    }
+  }
   .pageHome {
+    .addRouteArea {
+      button {
+        padding: 0.3rem 0.5rem;
+        margin-left: 2%;
+        background-color: rgb(188, 180, 143);
+      }
+    }
+    .addRouteForm {
+      margin-left: 2rem;
+      width: 35rem;
+      legend,
+      label {
+        color: blanchedalmond;
+      }
+      input,
+      textarea {
+        width: 70%;
+      }
+    }
     .routes {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0 2rem;
+      width: 37rem;
+      .showDataArea {
+        .buttonArea {
+          button {
+            padding: 0.3rem 0.5rem;
+            float: right;
+            background-color: rgb(188, 180, 143);
+          }
+        }
+      }
       h2 {
         font-style: italic;
-        margin: 1rem 1rem;
         a {
           color: rosybrown;
         }

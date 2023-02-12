@@ -7,19 +7,26 @@ import { PageHome } from './pages/PageHome';
 import { AppContext } from './AppContext';
 
 function App() {
+	const { adminIsLoggedIn } = useContext(AppContext);
 	return (
 		<div className="App">
 			<h1>Page will arrive soon</h1>
 			<nav>
 				<NavLink to="/home">Home</NavLink>
-				<NavLink to="/logout">Logout</NavLink>
-				<NavLink to="/login">Login</NavLink>
+				{adminIsLoggedIn ? (
+					<NavLink to="/logout">Logout</NavLink>
+				) : (
+					<NavLink to="/login">Login</NavLink>
+				)}
 			</nav>
 
 			<Routes>
 				<Route path="/home" element={<PageHome />} />
-				<Route path="/logout" element={<PageLogout />} />
-				<Route path="/login" element={<PageLogin />} />
+				{adminIsLoggedIn ? (
+					<Route path="/logout" element={<PageLogout />} />
+				) : (
+					<Route path="/login" element={<PageLogin />} />
+				)}
 				<Route path="/" element={<Navigate to="/home" replace />} />
 			</Routes>
 		</div>
