@@ -12,13 +12,9 @@ body {
       }
     }
   }
-  .page {
-    h2 {
-      color: blanchedalmond;
-    }
-  }
   .pageLogin {
     p {
+      margin: 0 2rem;
       color: blanchedalmond;
       font-size: large;
     }
@@ -32,15 +28,20 @@ body {
     }
   }
   .pageHome {
+    margin: .5rem 0;
+    h2 {
+      color: blanchedalmond;
+      margin: .5rem 0;
+    }
     .addRouteArea {
       button {
         padding: 0.3rem 0.5rem;
-        margin-left: 2%;
         background-color: rgb(188, 180, 143);
+        margin: .3rem 2rem 1.5rem;
       }
     }
     .addRouteForm {
-      margin-left: 2rem;
+      margin: 2rem;
       width: 35rem;
       legend,
       label {
