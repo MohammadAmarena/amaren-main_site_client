@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview",
+    "start": "vite preview --host --port 3502",
+    "deploy": "git pull --no-rebase && npm i && npm run build && pm2 restart getajob007-tanguay-eu",
+    "push": "git add . && git commit -m \"predeploy\" && git push",
     "cp": "node cli/cp.mjs"
   },
   "dependencies": {
