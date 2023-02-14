@@ -12,7 +12,7 @@ function App() {
 		<div className="App">
 			<h1>Page will arrive soon</h1>
 			<nav>
-				<NavLink to="/home">Home</NavLink>
+				<NavLink to="/">Home</NavLink>
 				{adminIsLoggedIn ? (
 					<NavLink to="/logout">Logout</NavLink>
 				) : (
@@ -21,13 +21,13 @@ function App() {
 			</nav>
 
 			<Routes>
-				<Route path="/home" element={<PageHome />} />
+				<Route path="/" element={<PageHome />} />
 				{adminIsLoggedIn ? (
 					<Route path="/logout" element={<PageLogout />} />
 				) : (
 					<Route path="/login" element={<PageLogin />} />
 				)}
-				<Route path="/" element={<Navigate to="/home" replace />} />
+				<Route path="/" element={<Navigate to="/" replace />} />
 			</Routes>
 		</div>
 	);
