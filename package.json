@@ -6,7 +6,7 @@
   "scripts": {
 		"dev": "vite",
 		"build": "tsc --build --clean && vite build",
-		"start": "vite serve --host --port 5173",
+		"start": "vite serve --host --port 5171",
 		"cp": "node cli/cp.mjs",
 		"setup": "npm i && pm2 start --name main-site npm -- start --update-env --time && pm2 save",
 		"deploy": "git pull --no-rebase && pm2 restart main-site --update-env --time && pm2 save"
